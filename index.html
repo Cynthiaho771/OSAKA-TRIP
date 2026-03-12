@@ -1,194 +1,184 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <title>大阪旅行行程</title>
-  <style>
-    body {
-      font-family: "Arial", sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c") no-repeat center/cover;
-      height: 300px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    nav {
-      background: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ff6b6b;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      border-left: 6px solid #ff6b6b;
-      padding-left: 10px;
-      margin-bottom: 20px;
-      color: #ff6b6b;
-    }
-    /* 行程時間軸 */
-    .timeline {
-      border-left: 4px solid #ff6b6b;
-      padding-left: 20px;
-    }
-    .timeline .item {
-      margin-bottom: 20px;
-    }
-    .timeline .item h3 {
-      margin: 0 0 5px 0;
-      font-weight: bold;
-      color: #333;
-    }
-    /* 美食卡片 */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #fafafa;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #ff6b6b;
-    }
-    /* 地圖 */
-    iframe {
-      width: 100%;
-      border-radius: 12px;
-      border: none;
-      height: 400px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    /* 響應式 */
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      section {
-        margin: 20px 10px;
-        padding: 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>日本關西旅行行程</title>
+
+<style>
+body{
+font-family: -apple-system, BlinkMacSystemFont;
+background:#f5f5f7;
+margin:0;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+font-size:28px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.day{
+background:white;
+border-radius:12px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.day h2{
+margin-top:0;
+}
+
+.place{
+padding:8px 0;
+}
+
+.tag{
+display:inline-block;
+background:#ff6b6b;
+color:white;
+font-size:12px;
+padding:3px 8px;
+border-radius:6px;
+margin-left:5px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin-top:10px;
+}
+
+.map{
+margin-top:6px;
+}
+
+a{
+color:#007aff;
+text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>大阪旅行</h1>
-  <p>2026/4/18 關西美食之旅</p>
+日本關西旅行行程
 </header>
 
-<nav>
-  <a href="#schedule">行程</a>
-  <a href="#food">美食</a>
-  <a href="#map">地圖</a>
-</nav>
+<div class="container">
 
-<section id="schedule">
-  <h2>📅 4/18 行程</h2>
-  <div class="timeline">
-    <div class="item">
-      <h3>✈️ 10:25</h3>
-      <p>抵達關西機場</p>
-    </div>
-    <div class="item">
-      <h3>🍣 12:30</h3>
-      <p>黑門市場午餐</p>
-    </div>
-    <div class="item">
-      <h3>🏮 14:00</h3>
-      <p>道頓堀散步</p>
-    </div>
-    <div class="item">
-      <h3>🏯 15:30</h3>
-      <p>大阪城參觀</p>
-    </div>
-    <div class="item">
-      <h3>☕ 17:30</h3>
-      <p>R Baker下午茶</p>
-    </div>
-    <div class="item">
-      <h3>🛍️ 18:30</h3>
-      <p>心齋橋逛街</p>
-    </div>
-    <div class="item">
-      <h3>🍲 19:00</h3>
-      <p>和和鍋晚餐</p>
-    </div>
-  </div>
-</section>
+<div class="day">
+<h2>Day1 大阪</h2>
 
-<section id="food">
-  <h2>🍣 黑門市場美食推薦</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Kuromon Sushi</h3>
-      <p>海膽 / 鮪魚 / 炙燒鮭魚</p>
-    </div>
-    <div class="card">
-      <h3>牛兆和牛</h3>
-      <p>A5和牛燒烤</p>
-    </div>
-    <div class="card">
-      <h3>黑門三平</h3>
-      <p>炭烤鰻魚</p>
-    </div>
-    <div class="card">
-      <h3>石橋關東煮</h3>
-      <p>牛筋 / 白蘿蔔</p>
-    </div>
-  </div>
-</section>
+<div class="place">
+道頓堀
+</div>
 
-<section id="map">
-  <h2>📍 黑門市場地圖</h2>
-  <iframe
-    src="https://maps.google.com/maps?q=kuromon%20market&t=&z=15&ie=UTF8&iwloc=&output=embed"
-    allowfullscreen
-    loading="lazy"
-  ></iframe>
-</section>
+<div class="place">
+心齋橋
+</div>
+
+<div class="place">
+晚餐：和牛伊甸 <span class="tag">建議訂位</span>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Dotonbori_area_Namba_Osaka_Japan.jpg">
+
+</div>
+
+
+<div class="day">
+<h2>Day2 京都</h2>
+
+<div class="place">
+清水寺
+</div>
+
+<div class="place">
+二年坂
+</div>
+
+<div class="place">
+祇園
+</div>
+
+<div class="place">
+午餐：Gion Duck Rice <span class="tag">需排隊</span>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Kiyomizu-dera_in_Kyoto.jpg">
+
+</div>
+
+
+<div class="day">
+<h2>Day3 天橋立</h2>
+
+<div class="place">
+天橋立
+</div>
+
+<div class="place">
+天橋立纜車
+</div>
+
+<div class="place">
+伊根舟屋
+</div>
+
+<div class="place">
+海上計程車 <span class="tag">建議預約</span>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Amanohashidate_view.jpg">
+
+</div>
+
+
+<div class="day">
+<h2>Day4 伊根</h2>
+
+<div class="place">
+伊根舟屋散步
+</div>
+
+<div class="place">
+伊根灣遊船
+</div>
+
+<div class="place">
+住宿：雅伊根舟屋
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Ine_Funaya.jpg">
+
+</div>
+
+
+<div class="day">
+<h2>交通</h2>
+
+<div class="place">
+特急列車：東方白鸛號（こうのとり）
+</div>
+
+<div class="place">
+JR車票建議提前購買
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
