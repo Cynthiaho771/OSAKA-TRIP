@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>日本關西9天旅行</title>
+<title>關西自由行 9 天</title>
 
 <style>
 
@@ -20,12 +20,13 @@ background:#fafafa;
 /* 左側導航 */
 
 .sidebar{
-width:250px;
+width:260px;
 background:#111;
 color:white;
 height:100vh;
 position:fixed;
-padding:20px;
+padding:25px;
+overflow:auto;
 }
 
 .sidebar h2{
@@ -37,41 +38,71 @@ color:white;
 text-decoration:none;
 display:block;
 margin:10px 0;
+font-size:16px;
 }
 
-/* 主內容 */
+.sidebar a:hover{
+color:#ffd369;
+}
+
+/* 右側內容 */
 
 .content{
-margin-left:270px;
+margin-left:280px;
 padding:40px;
 max-width:900px;
 }
 
 .day{
-margin-bottom:60px;
+margin-bottom:70px;
 }
 
 .day h2{
-border-bottom:2px solid #eee;
+border-bottom:3px solid #eee;
 padding-bottom:10px;
+}
+
+.section{
+margin-top:15px;
+font-size:16px;
 }
 
 .food{
 background:#fff3e8;
 padding:12px;
-border-radius:8px;
-margin-top:10px;
-}
-
-img{
-width:100%;
 border-radius:10px;
-margin-top:15px;
+margin-top:10px;
 }
 
 .map{
 margin-top:6px;
-font-size:14px;
+}
+
+img{
+width:100%;
+border-radius:12px;
+margin-top:15px;
+}
+
+/* 手機版 */
+
+@media(max-width:900px){
+
+body{
+display:block;
+}
+
+.sidebar{
+position:relative;
+width:100%;
+height:auto;
+}
+
+.content{
+margin-left:0;
+padding:20px;
+}
+
 }
 
 </style>
@@ -101,31 +132,40 @@ font-size:14px;
 
 <div class="content">
 
+
 <div class="day" id="day1">
 
 <h2>Day1 大阪</h2>
 
-黑門市場  
+<div class="section">
+黑門市場
+</div>
 
 <div class="food">
 
 必吃  
 
-①老奶奶現烤鰻魚  
-②石橋關東煮  
-③牛兆和牛燒烤  
-④魚福海膽干貝  
-⑤黑門川西生蠔  
+① 老奶奶現烤鰻魚  
+② 石橋關東煮  
+③ 牛兆和牛燒烤  
+④ 魚福海膽干貝  
+⑤ 黑門川西生蠔  
 
 </div>
 
-大阪城公園  
+<div class="section">
+
+大阪城公園
 
 <div class="map">
 <a href="https://maps.google.com/?q=osaka castle" target="_blank">Google Map</a>
 </div>
 
-心齋橋 道頓堀  
+</div>
+
+<div class="section">
+心齋橋 → 道頓堀
+</div>
 
 <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c">
 
@@ -137,7 +177,9 @@ font-size:14px;
 
 <h2>Day4 天橋立</h2>
 
-飛龍觀  
+<div class="section">
+飛龍觀
+</div>
 
 <div class="food">
 
@@ -158,11 +200,17 @@ font-size:14px;
 
 <h2>Day5 伊根</h2>
 
-伊根舟屋  
+<div class="section">
+伊根舟屋
+</div>
 
-海上計程車  
+<div class="section">
+海上計程車
+</div>
 
-向井酒造  
+<div class="section">
+向井酒造
+</div>
 
 <div class="food">
 
@@ -173,6 +221,39 @@ font-size:14px;
 </div>
 
 </div>
+
+
+
+<div class="day" id="day9">
+
+<h2>Day9 奈良</h2>
+
+<div class="section">
+伏見稻荷
+</div>
+
+<div class="section">
+奈良公園
+</div>
+
+<div class="section">
+東大寺
+</div>
+
+<div class="section">
+春日大社
+</div>
+
+<div class="food">
+
+必吃  
+
+江戶川鰻魚飯  
+
+</div>
+
+</div>
+
 
 </div>
 
