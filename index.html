@@ -1,25 +1,27 @@
 ```html
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>關西自由行 9 天</title>
+<title>關西自由行9天</title>
 
 <style>
 
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
 margin:0;
+background:#f5f6fa;
 display:flex;
-background:#fafafa;
 }
 
 /* 左側導航 */
 
 .sidebar{
+
 width:260px;
 background:#111;
 color:white;
@@ -27,80 +29,120 @@ height:100vh;
 position:fixed;
 padding:25px;
 overflow:auto;
+
 }
 
 .sidebar h2{
+
 margin-top:0;
+
 }
 
 .sidebar a{
+
 color:white;
 text-decoration:none;
 display:block;
-margin:10px 0;
+margin:12px 0;
 font-size:16px;
+
 }
 
 .sidebar a:hover{
+
 color:#ffd369;
+
 }
 
-/* 右側內容 */
+/* 內容 */
 
 .content{
+
 margin-left:280px;
 padding:40px;
 max-width:900px;
+
 }
 
+/* 首頁封面 */
+
+.hero{
+
+background-image:url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c");
+background-size:cover;
+background-position:center;
+height:350px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+
+}
+
+/* 每日卡片 */
+
 .day{
-margin-bottom:70px;
+
+margin-top:50px;
+
 }
 
 .day h2{
+
 border-bottom:3px solid #eee;
 padding-bottom:10px;
+
 }
 
 .section{
+
 margin-top:15px;
-font-size:16px;
+
 }
 
 .food{
+
 background:#fff3e8;
 padding:12px;
 border-radius:10px;
 margin-top:10px;
-}
 
-.map{
-margin-top:6px;
 }
 
 img{
+
 width:100%;
 border-radius:12px;
 margin-top:15px;
+
 }
 
-/* 手機版 */
+/* 手機 */
 
 @media(max-width:900px){
 
 body{
+
 display:block;
+
 }
 
 .sidebar{
+
 position:relative;
 width:100%;
 height:auto;
+
 }
 
 .content{
+
 margin-left:0;
 padding:20px;
+
 }
 
 }
@@ -108,7 +150,6 @@ padding:20px;
 </style>
 
 </head>
-
 
 <body>
 
@@ -130,7 +171,16 @@ padding:20px;
 </div>
 
 
+
 <div class="content">
+
+
+<div class="hero">
+
+Kansai Trip 🇯🇵
+
+</div>
+
 
 
 <div class="day" id="day1">
@@ -138,8 +188,8 @@ padding:20px;
 <h2>Day1 大阪</h2>
 
 <div class="section">
+
 黑門市場
-</div>
 
 <div class="food">
 
@@ -153,18 +203,20 @@ padding:20px;
 
 </div>
 
+</div>
+
 <div class="section">
 
-大阪城公園
+大阪城公園  
 
-<div class="map">
 <a href="https://maps.google.com/?q=osaka castle" target="_blank">Google Map</a>
-</div>
 
 </div>
 
 <div class="section">
+
 心齋橋 → 道頓堀
+
 </div>
 
 <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c">
@@ -178,8 +230,8 @@ padding:20px;
 <h2>Day4 天橋立</h2>
 
 <div class="section">
+
 飛龍觀
-</div>
 
 <div class="food">
 
@@ -187,6 +239,8 @@ padding:20px;
 
 天橋立布丁  
 鮮奶冰淇淋  
+
+</div>
 
 </div>
 
@@ -201,22 +255,28 @@ padding:20px;
 <h2>Day5 伊根</h2>
 
 <div class="section">
+
 伊根舟屋
+
 </div>
 
 <div class="section">
+
 海上計程車
+
 </div>
 
 <div class="section">
+
 向井酒造
-</div>
 
 <div class="food">
 
 必喝  
 
 伊根滿開  
+
+</div>
 
 </div>
 
@@ -229,19 +289,27 @@ padding:20px;
 <h2>Day9 奈良</h2>
 
 <div class="section">
+
 伏見稻荷
+
 </div>
 
 <div class="section">
+
 奈良公園
+
 </div>
 
 <div class="section">
+
 東大寺
+
 </div>
 
 <div class="section">
+
 春日大社
+
 </div>
 
 <div class="food">
@@ -257,7 +325,7 @@ padding:20px;
 
 </div>
 
-
 </body>
+
 </html>
 ```
