@@ -1,150 +1,57 @@
 ```html
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>關西自由行9天</title>
+<title>關西旅行行程</title>
 
 <style>
 
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
 margin:0;
-background:#f5f6fa;
 display:flex;
+background:#fafafa;
 }
 
-/* 左側導航 */
-
 .sidebar{
-
 width:260px;
 background:#111;
 color:white;
 height:100vh;
 position:fixed;
 padding:25px;
-overflow:auto;
-
-}
-
-.sidebar h2{
-
-margin-top:0;
-
 }
 
 .sidebar a{
-
 color:white;
 text-decoration:none;
 display:block;
-margin:12px 0;
-font-size:16px;
-
+margin:10px 0;
 }
-
-.sidebar a:hover{
-
-color:#ffd369;
-
-}
-
-/* 內容 */
 
 .content{
-
 margin-left:280px;
 padding:40px;
 max-width:900px;
-
 }
-
-/* 首頁封面 */
-
-.hero{
-
-background-image:url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c");
-background-size:cover;
-background-position:center;
-height:350px;
-border-radius:12px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:40px;
-font-weight:bold;
-
-}
-
-/* 每日卡片 */
 
 .day{
-
-margin-top:50px;
-
-}
-
-.day h2{
-
-border-bottom:3px solid #eee;
-padding-bottom:10px;
-
-}
-
-.section{
-
-margin-top:15px;
-
+margin-bottom:60px;
 }
 
 .food{
-
 background:#fff3e8;
 padding:12px;
-border-radius:10px;
+border-radius:8px;
 margin-top:10px;
-
 }
 
 img{
-
 width:100%;
-border-radius:12px;
+border-radius:10px;
 margin-top:15px;
-
-}
-
-/* 手機 */
-
-@media(max-width:900px){
-
-body{
-
-display:block;
-
-}
-
-.sidebar{
-
-position:relative;
-width:100%;
-height:auto;
-
-}
-
-.content{
-
-margin-left:0;
-padding:20px;
-
-}
-
 }
 
 </style>
@@ -152,7 +59,6 @@ padding:20px;
 </head>
 
 <body>
-
 
 <div class="sidebar">
 
@@ -170,68 +76,107 @@ padding:20px;
 
 </div>
 
-
-
 <div class="content">
-
-
-<div class="hero">
-
-Kansai Trip 🇯🇵
-
-</div>
-
-
 
 <div class="day" id="day1">
 
 <h2>Day1 大阪</h2>
 
-<div class="section">
+✈️ 06:40 桃機T1 → 10:25 關西機場  
 
-黑門市場
+🚆交通  
+關西機場 → 南海空港急行 → 難波站  
+→ 地鐵御堂筋線 → JR大阪環狀線野田站  
+
+📍行程  
+機場 → 飯店 → 黑門市場 → 大阪城公園 → 心齋橋道頓堀  
 
 <div class="food">
 
-必吃  
+黑門市場必吃  
 
 ① 老奶奶現烤鰻魚  
 ② 石橋關東煮  
 ③ 牛兆和牛燒烤  
 ④ 魚福海膽干貝  
-⑤ 黑門川西生蠔  
+⑤ 黑門川西超大生蠔  
+⑥ 黑銀炸物  
+⑦ 黑門水果  
+⑧ 丼丸海鮮丼  
 
 </div>
 
-</div>
+大阪城天守閣  
+門票 ¥1200  
 
-<div class="section">
-
-大阪城公園  
-
-<a href="https://maps.google.com/?q=osaka castle" target="_blank">Google Map</a>
-
-</div>
-
-<div class="section">
-
-心齋橋 → 道頓堀
-
-</div>
+🍲晚餐  
+和和鍋道頓崛店 19:00  
 
 <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c">
 
 </div>
 
 
+<div class="day" id="day2">
+
+<h2>Day2 箕面</h2>
+
+📍行程  
+
+大阪舞洲海濱公園  
+梶本家の藤  
+
+勝尾寺  
+箕面瀑布  
+箕面公園  
+瀧安寺  
+
+🍡必吃  
+楓葉天婦羅  
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+</div>
+
+
+<div class="day" id="day3">
+
+<h2>Day3 神戶</h2>
+
+生田神社  
+北野異人館  
+南京町  
+
+🍜必吃  
+
+神戶牛  
+老祥記豬肉包  
+
+美利堅公園  
+神戶港  
+Mosaic摩天輪  
+須磨海岸  
+
+<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+
+</div>
+
 
 <div class="day" id="day4">
 
 <h2>Day4 天橋立</h2>
 
-<div class="section">
+🚆交通  
 
-飛龍觀
+大阪 → 福知山  
+特急 こうのとり  
+
+📍行程  
+
+飛龍觀  
+智恩寺  
+籠神社  
+天橋立沙洲  
 
 <div class="food">
 
@@ -242,33 +187,21 @@ Kansai Trip 🇯🇵
 
 </div>
 
-</div>
+🏨伊根飯店  
 
 <img src="https://images.unsplash.com/photo-1601823984263-b87b59798b70">
 
 </div>
 
 
-
 <div class="day" id="day5">
 
 <h2>Day5 伊根</h2>
 
-<div class="section">
+伊根舟屋  
+海上計程車  
 
-伊根舟屋
-
-</div>
-
-<div class="section">
-
-海上計程車
-
-</div>
-
-<div class="section">
-
-向井酒造
+向井酒造  
 
 <div class="food">
 
@@ -278,54 +211,116 @@ Kansai Trip 🇯🇵
 
 </div>
 
-</div>
+🚆交通  
+
+天橋立 → 京都  
+觀光列車  
+
+🏨京都梅小路皇家公園酒店  
+
+<img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3">
 
 </div>
 
+
+<div class="day" id="day6">
+
+<h2>Day6 京都</h2>
+
+清水寺  
+二三年坂  
+高台寺  
+
+🍰甜點  
+
+Gion Gozu  
+
+🍙飯糰  
+
+Onimaru  
+
+錦市場  
+蝶矢  
+
+金閣寺  
+
+🍱晚餐  
+
+Kyo Unawa 鰻魚飯  
+
+<img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e">
+
+</div>
+
+
+<div class="day" id="day7">
+
+<h2>Day7 嵐山</h2>
+
+🚂嵐山小火車  
+龜岡 → 嵯峨  
+
+Coffee Shop Yamamoto  
+
+常寂光寺  
+御髮神社  
+大河內山莊  
+
+竹林小徑  
+野宮神社  
+天龍寺  
+
+嵐山商店街  
+
+👘和服之森  
+
+🍜晚餐  
+Gion Duck Rice  
+
+<img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9">
+
+</div>
+
+
+<div class="day" id="day8">
+
+<h2>Day8 美山</h2>
+
+美山合掌村  
+
+午餐  
+
+八坂神社  
+鴨川  
+
+<img src="https://images.unsplash.com/photo-1549693578-d683be217e58">
+
+</div>
 
 
 <div class="day" id="day9">
 
 <h2>Day9 奈良</h2>
 
-<div class="section">
+伏見稻荷  
+奈良町  
 
-伏見稻荷
-
-</div>
-
-<div class="section">
-
-奈良公園
-
-</div>
-
-<div class="section">
-
-東大寺
-
-</div>
-
-<div class="section">
-
-春日大社
-
-</div>
-
-<div class="food">
-
-必吃  
-
+🍱必吃  
 江戶川鰻魚飯  
 
-</div>
+興福寺  
+春日大社  
+東大寺  
+奈良公園  
+
+✈️ 20:55 關西 → 22:55 桃園  
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
 
 </div>
-
 
 </div>
 
 </body>
-
 </html>
 ```
